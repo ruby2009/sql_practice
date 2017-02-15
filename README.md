@@ -63,3 +63,5 @@ What were the top 3 highest grossing categories?
 2) Beauty, Toys & Sports|449496
 3) Sports|448410
 SELECT items.category, SUM(orders.quantity * items.price) AS total FROM orders JOIN items ON items.id=orders.item_id GROUP BY category ORDER BY total DESC LIMIT 3;
+
+<img width="1280" alt="screen shot 2017-02-14 at 11 31 56 pm" src="https://cloud.githubusercontent.com/assets/13660413/22960692/e1436438-f30d-11e6-8814-38ee3706617e.png">
